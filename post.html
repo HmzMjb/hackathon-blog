@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Posts</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-6">
+        <button id="signOutButton" class="mb-6 p-2 bg-red-500 text-white rounded">Sign Out</button>
+        <h1 class="text-3xl font-bold mb-6 text-center">Manage Posts</h1>
+        <form id="postForm" class="max-w-md mx-auto bg-white p-4 rounded shadow mb-6">
+            <input type="text" id="title" placeholder="Title" class="w-full p-2 mb-4 border rounded" required>
+            <textarea id="content" placeholder="Content" class="w-full p-2 mb-4 border rounded" required></textarea>
+            <button type="submit" class="w-full p-2 bg-blue-500 text-white rounded">Submit</button>
+        </form>
+        <div id="userPosts" class="space-y-4">
+            
+        </div>
+    </div>
+    <script type="module" src="post.js"></script>
+</body>
+</html>
